@@ -1,0 +1,28 @@
+{
+  "name": "create-keyframe",
+  "version": "0.0.1",
+  "description": "Create css keyframes",
+  "main": "src/create-keyframe.js",
+  "scripts": {
+    "test": "standard && node test/create-keyframe.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/chinedufn/create-keyframe.git"
+  },
+  "keywords": [
+    "keyframe",
+    "css",
+    "animation"
+  ],
+  "author": "Chinedu Francis Nwafili",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chinedufn/create-keyframe/issues"
+  },
+  "homepage": "https://github.com/chinedufn/create-keyframe",
+  "devDependencies": {
+    "standard": "^5.3.1",
+    "tape": "^4.2.0"
+  }
+}
