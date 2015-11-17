@@ -19,9 +19,12 @@ test('create keyframe', function (t) {
   }
 
   var keyframeName = 'fade-in'
-  var fadeIn = createKF(keyframeName, keyframe)
+  var fadeIn = createKF(keyframe, keyframeName)
+  // Auto generated keyframe name
+  var fadeInCUID = createKF(keyframe)
 
   t.equal(fadeIn.name, keyframeName)
   t.equal(fadeIn.css, fadeInCSS)
+  t.ok(fadeInCUID.name)
   t.end()
 })

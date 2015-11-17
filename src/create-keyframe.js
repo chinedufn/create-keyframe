@@ -1,6 +1,10 @@
+var cuid = require('cuid')
+
 module.exports = CreateKeyframe
 
-function CreateKeyframe (name, frames) {
+function CreateKeyframe (frames, name) {
+  name = name || cuid()
+
   var css = '@keyframes ' + name + ' {'
 
   Object.keys(frames).map(function (key) {

@@ -14,7 +14,7 @@ $ npm install --save create-keyframe
 ```js
 var createKeyframe = require('create-keyframe')
 
-var fadeOutColor = createKeyframe('fade-out-black-text', {
+var fadeOutColor = createKeyframe({
   0: {
     color: 'rgba(0, 0, 0, 1)'
   },
@@ -27,7 +27,7 @@ var fadeOutColor = createKeyframe('fade-out-black-text', {
 })
 
 console.log(fadeOutColor)
-// {name: 'fade-out-black-color', css: '@keyframes fade-out-black-text {...}'}
+// {name: 'cih3lymsf0000wly8uizhbo6d', css: '@keyframes cih3lymsf0000wly8uizhbo6d {...}'}
 ```
 
 JavaScript animations with CSS performance using `insert-css`
@@ -44,6 +44,29 @@ h('label', {
   animation: fadeOutColor.name + ' 1s'
 }, 'Black to invisible text')
 ```
+
+## API
+
+#### `createKeyframe(keyframeObject[, identifier])` -> `object`
+
+##### keyframeObject
+
+*Required*  
+Type: `object`
+
+An object representation of a keyframe list
+
+##### identifier
+
+Type: `string`
+
+A keyframe identifier. `create-keyframe` will generate a [cuid](https://github.com/ericelliott/cuid) if no `identifier` is specified
+
+## See Also
+
+- [@keyframes on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
+- [insert-css](https://github.com/substack/insert-css)
+- [insert-styles](https://github.com/bendrucker/insert-styles)
 
 ## License
 
