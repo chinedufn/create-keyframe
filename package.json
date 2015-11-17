@@ -1,6 +1,6 @@
 {
   "name": "create-keyframe",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Create css keyframes",
   "main": "src/create-keyframe.js",
   "scripts": {
