@@ -3,6 +3,8 @@ create-keyframe [![npm version](https://badge.fury.io/js/create-keyframe.svg)](h
 
 > Create css keyframes
 
+Inspired by this [gist](https://gist.github.com/bendrucker/c8c6ab6158370b316902#keyframes)
+
 ## To Install
 
 ```
