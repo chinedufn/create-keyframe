@@ -41,7 +41,9 @@ var fadeOutColor = createKeyframe({/* keyframe object */})
 insertCSS(fadeOutColor.css)
 
 h('label', {
-  animation: fadeOutColor.name + ' 1s'
+  style: {
+    animation: fadeOutColor.name + ' 1s'
+  }
 }, 'Black to invisible text')
 ```
 
