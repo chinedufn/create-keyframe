@@ -4,14 +4,19 @@ var createKF = require('../')
 
 var fadeInCSS = '' +
   '@keyframes fade-in {' +
-  '0% {color:rgba(0, 0, 0, 0)}' +
-  '100% {color:rgba(0, 0, 0, 1)}' +
+  '0% {color:rgba(0, 0, 0, 0);}' +
+  '50% {color:rgba(0, 0, 0, .5);font-size:15px;}' +
+  '100% {color:rgba(0, 0, 0, 1);}' +
   '}'
 
 test('create keyframe', function (t) {
   var keyframe = {
     0: {
       color: 'rgba(0, 0, 0, 0)'
+    },
+    50: {
+      color: 'rgba(0, 0, 0, .5)',
+      'font-size': '15px'
     },
     100: {
       color: 'rgba(0, 0, 0, 1)'

@@ -7,15 +7,19 @@ function CreateKeyframe (frames, name) {
 
   var css = '@keyframes ' + name + ' {'
 
-  Object.keys(frames).map(function (key) {
-    css += key + '% ' + JSON.stringify(frames[key])
+  Object.keys(frames).map(function (keyframeKey) {
+    css += keyframeKey + '% {'
+    Object.keys(frames[keyframeKey]).map(function (propertyKey) {
+      css += propertyKey + ':' + frames[keyframeKey][propertyKey] + ';'
+    })
+    css += '}'
   })
 
   css += '}'
 
   var Keyframe = {}
   Keyframe.name = name
-  Keyframe.css = css.replace(/["]+/g, '')
+  Keyframe.css = css
 
   return Keyframe
 }
