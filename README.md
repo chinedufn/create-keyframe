@@ -21,7 +21,9 @@ var fadeOutColor = createKeyframe({
     color: 'rgba(0, 0, 0, 1)'
   },
   50: {
-    color: 'rgba(0, 0, 0, .25)'
+    color: 'rgba(0, 0, 0, .25)',
+    fontSize: '24px',
+    'background-color': 'black'
   },
   100: {
     color: 'rgba(0, 0, 0, 0)'
